@@ -55,3 +55,10 @@ func TestProcessGuessContains(t *testing.T) {
 
 	}
 }
+
+func TestGenerateRandomWorld(t *testing.T) {
+	word := generateRandomWorld()
+	if len(word) != 5 {
+		t.Fatalf("Word must be 5 characters long")
+	}
+}
